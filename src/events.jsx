@@ -10,6 +10,7 @@ import { Tendencies } from './components/Tendencies';
 import { Partners } from './components/Partners';
 import { Contact } from './components/Contact';
 import { BackInfo } from './components/BackInfo';
+import NewsList from './components/GetNews';
 
 export function EventsPage(){
 var elements=new Array(
@@ -23,6 +24,7 @@ return(
       <SliderCard elementsList={elements}></SliderCard>
       <EventSection title='SOCIOS' subtitle='PARTNERS' content={content}></EventSection>
       <Tendencies></Tendencies>
+      <NewsList seccion='eventos'></NewsList>
       <BackInfo></BackInfo>
       <Partners></Partners>
       <Contact></Contact>

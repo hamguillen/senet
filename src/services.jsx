@@ -11,6 +11,7 @@ import { Partners } from './components/Partners';
 import { Contact } from './components/Contact';
 import { BannerInfo } from './components/BannerInfo';
 import { BackInfo } from './components/BackInfo';
+import NewsList from './components/GetNews';
 
 export function ServicesPage(){
 var elements=new Array(
@@ -24,6 +25,7 @@ return(
       <SliderCard elementsList={elements}></SliderCard>
       <CompanySection title='Compañía especializada en' subtitle='Gaming & E-sports' content={content}></CompanySection>
       <Tendencies></Tendencies>
+      <NewsList seccion='servicios'></NewsList>
       <BackInfo></BackInfo>
       <Partners></Partners>
       <BannerInfo></BannerInfo>

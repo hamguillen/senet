@@ -9,6 +9,7 @@ import { CompanySection } from './components/CompanySection';
 import { Podcast } from './components/Podcast';
 import { Contact } from './components/Contact';
 import { BannerInfo } from './components/BannerInfo';
+import NewsList from './components/GetNews';
 
 export function SenetPage(){
 var elements=new Array(
@@ -21,6 +22,7 @@ return(
     <Header activeIndex={1}></Header>
       <SliderCard elementsList={elements}></SliderCard>
       <CompanySection title='Compañía especializada en' subtitle='Gaming & E-sports' content={content}></CompanySection>
+      <NewsList seccion='senet'></NewsList>
       <Podcast></Podcast>
       <BannerInfo></BannerInfo>
       <Contact></Contact>

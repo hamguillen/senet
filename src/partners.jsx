@@ -23,6 +23,7 @@ return(
       <SliderCard elementsList={elements}></SliderCard>
       <CompanySection title='SOCIOS' subtitle='PARTNERS' content={content}></CompanySection>
       <Tendencies></Tendencies>
+      <NewsList seccion='partners'></NewsList>
       <BackInfo></BackInfo>
       <Partners></Partners>
       <Contact></Contact>

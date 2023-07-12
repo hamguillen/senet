@@ -10,19 +10,21 @@ import { Tendencies } from './components/Tendencies';
 import { Podcast } from './components/Podcast';
 import { Partners } from './components/Partners';
 import { Contact } from './components/Contact';
+import NewsList from './components/GetNews';
 
 export function MyApp(){
-var elements=new Array(
-  {image:'url(img/bg-img/bg-1.jpg)', title:'BIENVENIDO A', subtitle:['SENET','COMPANY'],button:'Contacto' },
-  {image:'url(img/bg-img/bg-2.jpg)', title:'Gaming & E-sports', subtitle:['SENET','Gaming & E-sports'],button:'WhatsApp' }
-)
-var content='Somos una compañía con presencia en LATAM especializada en los E-Sports. Creamos SOLUCIONES que hacen que las marcas entren a este mundo de la mejor manera.'
+  var elements=new Array(
+    {image:'url(img/bg-img/bg-1.jpg)', title:'BIENVENIDO A', subtitle:['SENET','COMPANY'],button:'Contacto' },
+    {image:'url(img/bg-img/bg-2.jpg)', title:'Gaming & E-sports', subtitle:['SENET','Gaming & E-sports'],button:'WhatsApp' }
+  )
+  var content='Somos una compañía con presencia en LATAM especializada en los E-Sports. Creamos SOLUCIONES que hacen que las marcas entren a este mundo de la mejor manera.'
 return(
   <>
     <Header activeIndex={0}></Header>
       <SliderCard elementsList={elements}></SliderCard>
       <CompanySection title='Compañía especializada en' subtitle='Gaming & E-sports' content={content}></CompanySection>
       <Tendencies></Tendencies>
+      <NewsList seccion='home'></NewsList>
       <Podcast></Podcast>
       <Partners></Partners>
       <Contact></Contact>
